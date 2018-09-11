@@ -1,0 +1,80 @@
+﻿@charset "utf-8"'
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+/* ------------------------------------------------------------------------------------------------------------------ Above we added the carset which will tell the browser how to endode the document. The import will allow the document to take the font from the internet. */
+
+
+
+
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 3
+   
+   Civil War History Style Sheet
+   Author: Bryan Vargas
+   Date:   9/10/18
+   
+   Filename: cw_styles.css
+
+*/
+
+/* ------------------------------------------------------------------------------------------------------------------ Here the html and body selectors will affect the web page and body, changing the backround color and font families.  */
+
+
+
+/* Structural Styles */
+html {
+    background-color: rgb(151, 151, 151);
+}
+
+body {
+    background-color: rgb(180, 180, 223);
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+footer {
+    color: white;
+    background-color: rgb(101, 101, 101);
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ The first and secound most important headers will now have normal font weight. */
+/* Body Header Styles */
+body>header {
+    font-weight: normal;
+    background-clip: o rgb(97, 97, 211);
+
+}
+
+h2 {
+    font-weight: normal;
+}
+
+
+
+/* Navigation Styles */
+nav a {
+    text-decoration: none;
+}
+
+h1#
+/* Outline Styles */
+
+
+
+
+/* Section Styles */
+
+
+
+
+/* Article Styles */
+
+
+
+
+/* Aside Styles */
