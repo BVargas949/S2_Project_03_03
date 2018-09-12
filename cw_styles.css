@@ -1,5 +1,5 @@
-﻿@charset "utf-8"'
-@import url('https://fonts.googleapis.com/css?family=Limelight');
+﻿@charset "utf-8";
+@import url('cw_layout.css');
 /* ------------------------------------------------------------------------------------------------------------------ Above we added the carset which will tell the browser how to endode the document. The import will allow the document to take the font from the internet. */
 
 
@@ -19,7 +19,7 @@
 
 */
 
-/* ------------------------------------------------------------------------------------------------------------------ Here the html and body selectors will affect the web page and body, changing the backround color and font families.  */
+/* ------------------------------------------------------------------------------------------------------------------ Here the html and body selectors will affect the web page and body, changing the backround color and font families. The footer has been reworked to have white text, a backround color using rgb, font size of 0.8 in em units, the text centered, and padding of 1px units added to the top and bottom.  */
 
 
 
@@ -33,48 +33,127 @@ body {
     font-family: Verdana, Geneva, sans-serif;
 }
 
-footer {
-    color: white;
-    background-color: rgb(101, 101, 101);
-    font-size: 0.8em;
-    text-align: center;
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
 
-/* ------------------------------------------------------------------------------------------------------------------ The first and secound most important headers will now have normal font weight. */
+
+/* ------------------------------------------------------------------------------------------------------------------ The first and secound most important headers will now have normal font weight. the header nested within the body will have normal font weight and a new backround volor. The hi nested within the header will have s font size of 4 vw units, new color using rgba, font family of limelight, and no margin space. The text within span that is nested inside the body and header was given a different color. */
+
+
+
 /* Body Header Styles */
 body>header {
-    font-weight: normal;
-    background-clip: o rgb(97, 97, 211);
+    /* font-weight: normal; */
+    background-color: rgb(97, 97, 211);
 
 }
 
+h1,
 h2 {
     font-weight: normal;
 }
 
+body>header>h1 {
+    font-size: 4vw;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Limelight', cursive;
+    margin: 0px;
+}
 
+body>header>h1 span {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------Within Navigation styles I removed the underline decoration from all links(anchor tags). The links within the class "mainLinks" were given 5 pixel units of space above and under by using padding. The color and backround-color for the main links were changed and given different specifications for when the user hovers over them. */
 
 /* Navigation Styles */
 nav a {
     text-decoration: none;
 }
 
-h1#
+
+
+nav#mainLinks a:link,
+nav#mainLinks a:visited {
+    color: white;
+    padding: 5px 0px;
+
+}
+
+nav#mainLinks a:hover,
+nav#mainLinks a:active {
+    color: white;
+    opacity: 0.8;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------Within the outline styles  */
+
+
 /* Outline Styles */
 
+h1#outline {
+    text-align: center;
+}
 
+nav#outline>ol {
+    line-height: 2em;
+    margin: 0px 5px;
+    list-style: upper-roman;
+}
 
+nav#outline>ol ol {
+    list-style-type: upper-alpha;
+}
+
+nav#outline a {
+    color: rgb(51, 51, 51);
+    font-size: 0.8em;
+}
+
+nav#outline>ol a:link,
+nav#outline>ol a:visited {
+    color: rgb(101, 101, 101);
+}
+
+nav#outline ol a:hover,
+nav#outline ol a:active {
+    color: rgb(97, 97, 211);
+    text-decoration: underline;
+}
 
 /* Section Styles */
+section {
+    background-color: rgb(220, 220, 220);
+}
 
+section header h1 {
+    font-size: 2.2em;
+    padding-left: 10px;
+}
 
 
 
 /* Article Styles */
-
+article h2 {
+    font-size: 1.4em;
+}
 
 
 
 /* Aside Styles */
+aside {
+    font-size: 0.9em;
+}
+
+aside h1 {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+/* footer styles */
+footer {
+    color: white;
+    background-color: rgb(101, 101, 101);
+    font-size: 0.8em;
+    text-align: center;
+    padding: 1px 0px;
+}
