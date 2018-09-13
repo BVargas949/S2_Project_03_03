@@ -85,7 +85,7 @@ nav#mainLinks a:active {
     background-color: rgba(51, 51, 51, 0.5);
 }
 
-/* ------------------------------------------------------------------------------------------------------------------Within the outline styles  */
+/* ------------------------------------------------------------------------------------------------------------------Within the outline styles the headers and listed links were given specifications using the id of outline. The h1 was centered, the first ordered list (child of the nav#outline) was given a lineheight of 2 em units, margin space for the top was 0px and the right was 5 pixel units. The list organization was changed to uppercase Roman numerals. The next nested ordered list was given a new orgaization pattern of uppercase letters. All the links within the Nav id=outline were given new clors and font size, other specifications were used for it when hovering over them.(color: rgb(97, 97, 211) ) */
 
 
 /* Outline Styles */
@@ -120,6 +120,10 @@ nav#outline ol a:active {
     text-decoration: underline;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------Within the section styles the section was given a new backround color (rgb). The h1 nesten insdie the section was fiven a new fonr size and extra padding to the left.  */
+
+
+
 /* Section Styles */
 section {
     background-color: rgb(220, 220, 220);
@@ -130,6 +134,8 @@ section header h1 {
     padding-left: 10px;
 }
 
+
+/* ------------------------------------------------------------------------------------------------------------------Here the h2 nested within the article was given a new font size. The aside and the h1 nested within it were given new font size aswell. The footer was given a complete makeover which included white text, backround color(rgb), font size(em), aligned text, and padding above(1px) and 0px to the left and right. */
 
 
 /* Article Styles */
